@@ -29,3 +29,14 @@ h1 {
 .resume {
   display: inline-block;
 }
+
+.home p {
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.home {
+  display: inline-block;
+  width: 50%;
+}

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f18a4d3e.chunk.css",
+    "main.js": "/static/js/main.defbcb97.chunk.js",
+    "main.js.map": "/static/js/main.defbcb97.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3664b334.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3664b334.js.map",
+    "static/css/2.5158945e.chunk.css": "/static/css/2.5158945e.chunk.css",
+    "static/js/2.bae0a76d.chunk.js": "/static/js/2.bae0a76d.chunk.js",
+    "static/js/2.bae0a76d.chunk.js.map": "/static/js/2.bae0a76d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.10a8801f3e3e878e822fd08f9731acb6.js": "/precache-manifest.10a8801f3e3e878e822fd08f9731acb6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.5158945e.chunk.css.map": "/static/css/2.5158945e.chunk.css.map",
+    "static/css/main.f18a4d3e.chunk.css.map": "/static/css/main.f18a4d3e.chunk.css.map",
+    "static/media/andrew-resume.pdf": "/static/media/andrew-resume.1d184862.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3664b334.js",
+    "static/css/2.5158945e.chunk.css",
+    "static/js/2.bae0a76d.chunk.js",
+    "static/css/main.f18a4d3e.chunk.css",
+    "static/js/main.defbcb97.chunk.js"
+  ]
+}
