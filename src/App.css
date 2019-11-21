@@ -26,33 +26,3 @@
   align-items: center;
   justify-content: center;
 }
-
-body {
-  background: linear-gradient(270deg, rgba(82,45,128,0.8), rgba(246,103,51,0.8));
-}
-
-.letterStyle {
-  padding: 10px;
-  margin: 10px;
-  background-color: #522D80;
-  border-radius: 50%;
-  color: #F66733;
-  display: inline-block;
-  font-family: monospace;
-  font-size: 32px;
-  text-align: center;
-}
-
-.letterStyle:hover {
-  transform: scale(1.1);
-}
-
-#construction {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 16px;
-  text-align: center;
-  font-family: monospace;
-  margin: auto;
-  width: 75vw;
-}

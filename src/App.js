@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import Home from './components/Home';
+import About from './components/About';
+import NavBar from './components/NavBar';
 import './App.css';
-import BubbleLetter from './components/BubbleLetter';
+import { 
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <div id="container">
-        <BubbleLetter letter={'W'} />
-        <BubbleLetter letter={'E'} />
-        <BubbleLetter letter={'L'} />
-        <BubbleLetter letter={'C'} />
-        <BubbleLetter letter={'O'} />
-        <BubbleLetter letter={'M'} />
-        <BubbleLetter letter={'E'} />
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
       </div>
-      <p id="construction">
-        This page is currently under construction. Thank you for your patience!
-      </p>
-    </>
+    </Router>
   );
 }
 
