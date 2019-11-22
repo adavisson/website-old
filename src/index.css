@@ -60,6 +60,13 @@ h1 {
   width: 100%;
 }
 
+.resume a {
+  color: #003866;
+}
+.resume .link {
+  margin-bottom: 15px;
+}
+
 .about {
   display: inline-block;
   max-width: 75%;

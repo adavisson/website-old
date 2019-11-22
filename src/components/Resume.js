@@ -8,6 +8,9 @@ const Resume = () => {
   return (
     <div className="resume">
       <h1>Resume</h1>
+      <div className="link">
+        <a href={resume}>Download a copy</a>
+      </div>
       <Document file={resume}>
         <Page pageNumber={1}/>
       </Document>
