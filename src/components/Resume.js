@@ -9,7 +9,7 @@ const Resume = () => {
     <div className="resume">
       <h1>Resume</h1>
       <div className="link">
-        <a href={resume}>Download a copy</a>
+        <a target="_blank" href={resume}>Download a copy</a>
       </div>
       <Document file={resume}>
         <Page pageNumber={1}/>
