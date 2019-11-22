@@ -13,6 +13,7 @@ const NavBar = () => {
           <NavDropdown title="Social" id="basic-nav-dropdown">
             <NavDropdown.Item target="_blank" href="https://www.linkedin.com/in/andrew-davisson/">LinkedIn</NavDropdown.Item>
             <NavDropdown.Item target="_blank" href="https://github.com/adavisson">GitHub</NavDropdown.Item>
+            <NavDropdown.Item target="_blank" href="https://adavisson.github.io/">Blog</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
