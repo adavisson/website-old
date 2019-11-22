@@ -73,3 +73,16 @@ h1 {
 .profile-pic {
   max-height: 400px;
 }
+
+.about p {
+  margin: 20px;
+  text-align: left;
+  display: inline-block;
+  width: 90%;
+}
+
+.about p a {
+  color: #003866;
+  font-weight: 700;
+  font-style: italic;
+}
