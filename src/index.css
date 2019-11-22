@@ -69,3 +69,7 @@ h1 {
   color: #ffb347;
   font-weight: bold;
 }
+
+.profile-pic {
+  max-height: 350px;
+}

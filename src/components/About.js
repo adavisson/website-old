@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about">
       <h2>About Me</h2>
-      <Image src={pic} fluid />
+      <Image className="profile-pic" src={pic} fluid />
     </div>
   );
 }
