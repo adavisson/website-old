@@ -60,3 +60,7 @@ h1 {
   width: 100%;
 }
 
+.about {
+  display: inline-block;
+  max-width: 75%;
+}
