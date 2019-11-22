@@ -54,3 +54,9 @@ h1 {
   display: inline-block;
   width: 65%;
 }
+
+.resume h1 {
+  display: inline-block;
+  width: 100%;
+}
+

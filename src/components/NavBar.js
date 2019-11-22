@@ -17,7 +17,7 @@ class NavBar extends Component {
   render() { 
     const mobile = this.state.isMobile ? '' : 'lg';
     return (
-      <Navbar expand={mobile}>
+      <Navbar sticky="top" expand={mobile}>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
