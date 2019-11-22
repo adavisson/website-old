@@ -20,10 +20,24 @@ h1 {
 
 .navbar {
   background-color: #003866;
+  margin-bottom: 15px;
 }
 
 #basic-navbar-nav .nav-link {
-  color: white;
+  color: #ffb347;
+}
+
+.dropdown-menu {
+  background-color: #ffb347;
+}
+
+.dropdown-item {
+  color: #003866;
+}
+
+.dropdown-item:hover {
+  background-color: #003866;
+  color: #ffb347;
 }
 
 .resume {
