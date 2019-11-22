@@ -11,9 +11,11 @@ const Resume = () => {
       <div className="link">
         <a target="_blank" href={resume}>Download a copy</a>
       </div>
-      <Document file={resume}>
-        <Page pageNumber={1}/>
-      </Document>
+      <div className="document">
+        <Document file={resume}>
+          <Page pageNumber={1}/>
+        </Document>
+      </div>
     </div>
   );
 }

@@ -55,6 +55,11 @@ h1 {
   width: 65%;
 }
 
+.resume {
+  display: inline-block;
+  max-width: 100%;
+}
+
 .resume h1 {
   display: inline-block;
   width: 100%;
