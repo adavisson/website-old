@@ -44,6 +44,15 @@ h1 {
   display: inline-block;
 }
 
+.home {
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  /* width: 65%; */
+  justify-content: center;
+  align-content: flex-start;
+}
+
 .home p {
   font-size: large;
   font-weight: 500;
@@ -56,15 +65,6 @@ h1 {
 .gif {
   margin: auto;
   flex-shrink: 1;
-}
-
-.home {
-  /* display: inline-block; */
-  display: flex;
-  flex-direction: column;
-  /* width: 65%; */
-  justify-content: center;
-  align-content: flex-start;
 }
 
 .resume {
@@ -85,27 +85,35 @@ h1 {
 }
 
 .about {
-  display: inline-block;
-  max-width: 75%;
-}
-
-.navbar .navbar-brand {
-  color: #ffb347;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  /* max-width: 75%; */
 }
 
 .profile-pic {
-  max-height: 400px;
+  /* max-height: 400px; */
+  max-width: 400px;
+  margin: auto;
+  flex-shrink: 1;
 }
 
 .about p {
-  margin: 20px;
   text-align: left;
-  display: inline-block;
-  width: 90%;
+  /* display: inline-block; */
+  max-width: 750px;
+  flex: 0 1 auto;
+  margin: auto;
+  padding: 20px;
 }
 
 .about p a {
   color: #003866;
   font-weight: 700;
+}
+
+.navbar .navbar-brand {
+  color: #ffb347;
+  font-weight: bold;
 }
