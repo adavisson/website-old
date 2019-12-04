@@ -56,13 +56,14 @@ h1 {
 .home p {
   font-size: large;
   font-weight: 500;
-  max-width: 700px;
+  max-width: 90%;
   padding: 10px;
   margin: auto;
   flex: 0 1 auto;
 }
 
 .gif {
+  max-width: 90%;
   margin: auto;
   flex-shrink: 1;
 }
@@ -110,6 +111,10 @@ h1 {
   .profile-pic {
     max-width: 450px;
     max-height: auto;
+  }
+
+  .home p {
+    max-width: 700px;
   }
 }
 
