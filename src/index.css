@@ -45,10 +45,8 @@ h1 {
 }
 
 .home {
-  /* display: inline-block; */
   display: flex;
   flex-direction: column;
-  /* width: 65%; */
   justify-content: center;
   align-content: flex-start;
 }
@@ -71,7 +69,6 @@ h1 {
 
 .resume {
   display: flex;
-  /* max-width: 100%; */
   flex-direction: column;
   justify-content: center;
   align-content: flex-start;
@@ -98,7 +95,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-content: flex-start;
-  /* max-width: 75%; */
 }
 
 .profile-pic {
@@ -121,7 +117,6 @@ h1 {
 
 .about p {
   text-align: left;
-  /* display: inline-block; */
   max-width: 750px;
   flex: 0 1 auto;
   margin: auto;
