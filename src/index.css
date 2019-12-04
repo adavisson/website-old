@@ -47,12 +47,24 @@ h1 {
 .home p {
   font-size: large;
   font-weight: 500;
+  max-width: 700px;
   padding: 10px;
+  margin: auto;
+  flex: 0 1 auto;
+}
+
+.gif {
+  margin: auto;
+  flex-shrink: 1;
 }
 
 .home {
-  display: inline-block;
-  width: 65%;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  /* width: 65%; */
+  justify-content: center;
+  align-content: flex-start;
 }
 
 .resume {
