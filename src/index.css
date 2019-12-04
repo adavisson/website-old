@@ -63,7 +63,8 @@ h1 {
 }
 
 .gif {
-  max-width: 90%;
+  max-width: 85%;
+  flex-basis: auto;
   margin: auto;
   flex-shrink: 1;
 }
