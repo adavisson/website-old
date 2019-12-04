@@ -68,8 +68,15 @@ h1 {
 }
 
 .resume {
-  display: inline-block;
-  max-width: 100%;
+  display: flex;
+  /* max-width: 100%; */
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.document {
+  margin: auto;
 }
 
 .resume h1 {
@@ -93,10 +100,17 @@ h1 {
 }
 
 .profile-pic {
-  /* max-height: 400px; */
-  max-width: 400px;
+  max-width: 85%;
+  flex-basis: auto;
   margin: auto;
   flex-shrink: 1;
+}
+
+@media only screen and (min-width: 500px){
+  .profile-pic {
+    max-width: 450px;
+    max-height: auto;
+  }
 }
 
 .about p {
