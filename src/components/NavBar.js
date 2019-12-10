@@ -18,6 +18,7 @@ const NavBar = () => {
           </NavDropdown>
           <NavDropdown title="Projects" id="basic-nav-dropdown-projects">
             <NavDropdown.Item href="https://crazy-tales.andydavisson.com">Crazy Tales</NavDropdown.Item>
+            <NavDropdown.Item href="https://cfb-machine.andydavisson.com">CFB Machine</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
