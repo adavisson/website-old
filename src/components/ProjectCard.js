@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
     <Card className="text-center">
       <Card.Header>{props.title}</Card.Header>
       <Card.Body>
-        <Card.Text>{props.description}</Card.Text>
+        <Card.Text><em>{props.description}</em></Card.Text>
         <Button variant="primary" href={props.repository} target="_blank">GitHub</Button>
       </Card.Body>
       {props.link && (
