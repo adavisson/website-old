@@ -7,8 +7,13 @@ const ProjectCard = (props) => {
       <Card.Header>{props.title}</Card.Header>
       <Card.Body>
         <Card.Text>{props.description}</Card.Text>
-        <Button variant="primary" href={props.link} target="_blank">GitHub</Button>
+        <Button variant="primary" href={props.repository} target="_blank">GitHub</Button>
       </Card.Body>
+      {props.link && (
+        <Card.Footer>
+          <Button style={{ width: "50%"}} variant="secondary" href={props.link} target="_blank">Demo</Button>
+        </Card.Footer>
+      )}
     </Card>
   );
 }

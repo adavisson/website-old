@@ -38,6 +38,8 @@
 .card-header{
   background-color: #003866;
   color: #ffb347;
+  font-size: x-large;
+  font-weight: 600;
 }
 
 .card-body{
@@ -92,6 +94,18 @@ h1 {
 .btn-primary:hover {
   background-color: #ffb347;
   color: #003866;
+  border-color: #003866;
+}
+
+.btn-secondary {
+  background-color: #ffb347;
+  color: #003866;
+  border-color: #003866;
+}
+
+.btn-secondary:hover {
+  background-color: #003866;
+  color: #ffb347;
   border-color: #003866;
 }
 

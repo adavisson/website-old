@@ -7,22 +7,25 @@ const Projects = () => {
     {
       title: "CFB Machine",
       description: "A football website",
-      link: "https://github.com/adavisson/cfb-machine"
+      repository: "https://github.com/adavisson/cfb-machine",
+      link: "https://cfb-machine.andydavisson.com/"
     },
     {
-      title: "Wacky Stories",
+      title: "Crazy Tales",
       description: "MadLibz",
-      link: "https://github.com/adavisson/Wacky-Stories"
+      repository: "https://github.com/adavisson/Wacky-Stories",
+      link: "https://crazy-tales.andydavisson.com/"
     },
     {
       title: "Job Board",
       description: "Hire Me",
-      link: "https://github.com/adavisson/job-board-client"
+      repository: "https://github.com/adavisson/job-board-client"
     },
     {
       title: "Study Buddy",
       description: "I know it all",
-      link: "https://github.com/adavisson/study-buddy"
+      repository: "https://github.com/adavisson/study-buddy",
+      link: "https://study-buddy.andydavisson.com/"
     }
   ]
 
@@ -35,11 +38,11 @@ const Projects = () => {
             <ProjectCard
               title={proj.title}
               description={proj.description}
+              repository={proj.repository}
               link={proj.link}
             />
           )
         })}
-        
       </div>
     </>
   );
