@@ -6,19 +6,23 @@ const Projects = () => {
   const projects = [
     {
       title: "CFB Machine",
-      description: "A football website"
+      description: "A football website",
+      link: "https://github.com/adavisson/cfb-machine"
     },
     {
       title: "Wacky Stories",
-      description: "MadLibz"
+      description: "MadLibz",
+      link: "https://github.com/adavisson/Wacky-Stories"
     },
     {
       title: "Job Board",
-      description: "Hire Me"
+      description: "Hire Me",
+      link: "https://github.com/adavisson/job-board-client"
     },
     {
       title: "Study Buddy",
-      description: "I know it all"
+      description: "I know it all",
+      link: "https://github.com/adavisson/study-buddy"
     }
   ]
 
@@ -31,6 +35,7 @@ const Projects = () => {
             <ProjectCard
               title={proj.title}
               description={proj.description}
+              link={proj.link}
             />
           )
         })}
