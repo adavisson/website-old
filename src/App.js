@@ -5,7 +5,6 @@ import NavBar from './components/NavBar';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
 import './App.css';
-import './index.css';
 import { 
   BrowserRouter as Router,
   Route
