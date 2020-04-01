@@ -16,7 +16,6 @@ const NavBar = () => {
             <NavDropdown.Item target="_blank" href="https://www.builtincolorado.com/member/akdavisson4/176086">Built In Colorado</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="/projects">Projects</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
