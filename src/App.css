@@ -109,8 +109,9 @@ h1 {
 }
 
 #basic-navbar-nav .nav-link:hover {
-  background-color: #ffb347;
-  color: #003866;
+  /* background-color: #ffb347;
+  color: #003866; */
+  font-weight: 600;
 }
 
 .btn-primary {
