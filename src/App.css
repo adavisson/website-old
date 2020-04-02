@@ -114,6 +114,11 @@ h1 {
   font-weight: 600;
 }
 
+.nav-link:hover {
+  color: #ffb347;
+  font-weight: bold;
+}
+
 .btn-primary {
   background-color: #003866;
   color: #ffb347;
