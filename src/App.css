@@ -51,7 +51,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: stretch;
   margin: 15px;
 }
 
