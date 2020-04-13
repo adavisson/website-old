@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { usePosition } from 'use-position';
+import { withRouter } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [iconCode, setIconCode] = useState("")
   const [city, setCity] = useState("")
   const [cityId, setCityId] = useState('5419384')
@@ -24,18 +25,18 @@ const NavBar = () => {
 
   return (
     <Navbar sticky="top" expand="lg">
-      <Navbar.Brand href="/">Home</Navbar.Brand>
+      <Navbar.Brand onClick={() => {props.history.push('/')}}>Home</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/resume">Resume</Nav.Link>
+          <Nav.Link onClick={() => {props.history.push('/resume')}}>Resume</Nav.Link>
           <Nav.Link href="https://adavisson.github.io">Blog</Nav.Link>
           <NavDropdown title="Social" id="basic-nav-dropdown-social">
             <NavDropdown.Item target="_blank" href="https://www.linkedin.com/in/andrew-davisson/">LinkedIn</NavDropdown.Item>
             <NavDropdown.Item target="_blank" href="https://github.com/adavisson">GitHub</NavDropdown.Item>
             <NavDropdown.Item target="_blank" href="https://www.builtincolorado.com/member/akdavisson4/176086">Built In Colorado</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="/projects">Projects</Nav.Link>
+          <Nav.Link onClick={() => {props.history.push('/projects')}}>Projects</Nav.Link>
         </Nav>
       </Navbar.Collapse>
       <Nav className="weather">
@@ -48,4 +49,4 @@ const NavBar = () => {
   );
 }
  
-export default NavBar;
+export default withRouter(NavBar);
