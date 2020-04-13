@@ -248,3 +248,8 @@ h1 {
   color: #ffb347;
   font-weight: bold;
 }
+
+.navbar img {
+  background-color: #ffb347;
+  border-radius: 2em;
+}
