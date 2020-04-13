@@ -57,7 +57,7 @@ const NavBar = (props) => {
       </Navbar.Collapse>
       <Nav className="weather">
         <Nav.Link href={`https://openweathermap.org/city/${cityId}`} target="_blank">
-          {`${city} ${temp}\xB0 `}
+          {`${city} ${parseInt(temp)}\xB0F `}
           <img alt="weather icon" src={`https://openweathermap.org/img/wn/${iconCode}.png`} />
         </Nav.Link>
       </Nav>
