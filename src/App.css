@@ -231,6 +231,10 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .navbar :nth-child(2) { order: 2}
+}
+
 .about p {
   text-align: left;
   max-width: 750px;
