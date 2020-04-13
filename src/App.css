@@ -264,6 +264,11 @@ h1 {
   font-weight: 400;
 }
 
+.navbar .weather .nav-link:visited {
+  color: #ffb347;
+  font-weight: 400;
+}
+
 .navbar .weather .nav-link:hover {
   color: #ffb347;
   font-weight: 600;
