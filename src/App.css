@@ -231,6 +231,10 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .navbar :nth-child(2) { order: 2}
+}
+
 .about p {
   text-align: left;
   max-width: 750px;
@@ -247,4 +251,15 @@ h1 {
 .navbar .navbar-brand {
   color: #ffb347;
   font-weight: bold;
+}
+
+.navbar img {
+  background-color: #ffb347;
+  border-radius: 2em;
+  max-width: 35px;
+}
+
+.navbar .navbar-text {
+  color: #ffb347;
+  font-weight: 600;
 }

@@ -1,7 +1,25 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const NavBar = () => {
+  const [iconCode, setIconCode] = useState("")
+  const [city, setCity] = useState("")
+  const [temp, setTemp] = useState("")
+  const appId = '440287f1b78a560637a7abe6f38d3739'
+
+
+  useEffect(() => {
+    const setData = async () => {
+      const result = await fetch(`http://api.openweathermap.org/data/2.5/weather?zip=80202&units=imperial&appid=${appId}`)
+      const data = await result.json()
+      console.log(data)
+      setCity(data.name)
+      setTemp(data.main.temp)
+      setIconCode(data.weather[0].icon)
+    }
+    setData()
+  }, [])
+
   return (
     <Navbar sticky="top" expand="lg">
       <Navbar.Brand href="/">Home</Navbar.Brand>
@@ -18,6 +36,11 @@ const NavBar = () => {
           <Nav.Link href="/projects">Projects</Nav.Link>
         </Nav>
       </Navbar.Collapse>
+      <Nav className="weather">
+        <Navbar.Text>{`${city} ${temp}\xB0 `}
+          <img alt="weather icon" src={`http://openweathermap.org/img/wn/${iconCode}.png`} />
+        </Navbar.Text>
+      </Nav>
     </Navbar>
   );
 }
