@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const NavBar = () => {
+
   return (
     <Navbar sticky="top" expand="lg">
       <Navbar.Brand href="/">Home</Navbar.Brand>
@@ -16,6 +17,9 @@ const NavBar = () => {
             <NavDropdown.Item target="_blank" href="https://www.builtincolorado.com/member/akdavisson4/176086">Built In Colorado</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="/projects">Projects</Nav.Link>
+        </Nav>
+        <Nav inline>
+          <Nav.Link>Weather</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
