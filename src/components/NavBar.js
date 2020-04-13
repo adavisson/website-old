@@ -10,7 +10,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const setData = async () => {
-      const result = await fetch(`http://api.openweathermap.org/data/2.5/weather?zip=80202&units=imperial&appid=${appId}`)
+      const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=80202&units=imperial&appid=${appId}`)
       const data = await result.json()
       console.log(data)
       setCity(data.name)
@@ -38,7 +38,7 @@ const NavBar = () => {
       </Navbar.Collapse>
       <Nav className="weather">
         <Navbar.Text>{`${city} ${temp}\xB0 `}
-          <img alt="weather icon" src={`http://openweathermap.org/img/wn/${iconCode}.png`} />
+          <img alt="weather icon" src={`https://openweathermap.org/img/wn/${iconCode}.png`} />
         </Navbar.Text>
       </Nav>
     </Navbar>
