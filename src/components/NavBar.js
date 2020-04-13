@@ -1,24 +1,24 @@
 import React, {useState, useEffect} from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { usePosition } from 'use-position';
 
 const NavBar = () => {
   const [iconCode, setIconCode] = useState("")
   const [city, setCity] = useState("")
   const [temp, setTemp] = useState("")
   const appId = '440287f1b78a560637a7abe6f38d3739'
-
+  const {latitude, longitude, error} = usePosition();
 
   useEffect(() => {
     const setData = async () => {
-      const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=80202&units=imperial&appid=${appId}`)
+      const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude || 39.74}&lon=${longitude || -104.99}&units=imperial&appid=${appId}`)
       const data = await result.json()
-      console.log(data)
       setCity(data.name)
       setTemp(data.main.temp)
       setIconCode(data.weather[0].icon)
     }
     setData()
-  }, [])
+  }, [latitude, longitude])
 
   return (
     <Navbar sticky="top" expand="lg">
