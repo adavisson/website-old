@@ -257,3 +257,8 @@ h1 {
   background-color: #ffb347;
   border-radius: 2em;
 }
+
+.navbar .navbar-text {
+  color: #ffb347;
+  font-weight: 600;
+}
