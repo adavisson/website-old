@@ -14,7 +14,6 @@ const NavBar = () => {
     const setData = async () => {
       const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude || 39.74}&lon=${longitude || -104.99}&units=imperial&appid=${appId}`)
       const data = await result.json()
-      console.log(data)
       setCity(data.name)
       setTemp(data.main.temp)
       setIconCode(data.weather[0].icon)
