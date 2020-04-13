@@ -250,6 +250,10 @@ h1 {
 
 .navbar .navbar-brand {
   color: #ffb347;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ffb347;
   font-weight: bold;
 }
 
