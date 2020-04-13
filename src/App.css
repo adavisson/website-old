@@ -256,6 +256,7 @@ h1 {
 .navbar img {
   background-color: #ffb347;
   border-radius: 2em;
+  max-width: 35px;
 }
 
 .navbar .navbar-text {
