@@ -16,7 +16,7 @@ const Footer = () => {
           </Nav.Item>
           <span style={{ padding: "5px 5px"}}>|</span>
           <Nav.Item>
-            <Nav.Link href="https://www.builtincolorado.com/member/akdavisson4/176086">Build In Colorado</Nav.Link>
+            <Nav.Link href="https://www.builtincolorado.com/member/akdavisson4/176086">Built In Colorado</Nav.Link>
           </Nav.Item>
         </Nav>
       </div>
