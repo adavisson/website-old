@@ -65,7 +65,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: center;
   margin: 15px;
 }
 
