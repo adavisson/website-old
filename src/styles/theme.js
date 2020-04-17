@@ -20,15 +20,13 @@ export const cardStyle = makeStyles({
   root: {
     width: '20rem',
     margin: '15px',
-    padding: '5px',
     backgroundColor: '#003866',
   },
   title: {
     fontSize: 'x-large',
-    // margin: '5px'
+    marginBottom: '10px'
   },
   body: {
-    margin: '5px',
     padding: '15px',
     backgroundColor: '#ffb347'
   },
