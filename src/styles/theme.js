@@ -34,3 +34,15 @@ export const cardStyle = makeStyles({
     marginBottom: 12,
   },
 })
+
+export const navStyle = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
