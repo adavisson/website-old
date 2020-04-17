@@ -110,11 +110,13 @@ const NavBar = (props) => {
   }
 
   const materialNav = () => {
-    const classes = navStyle()
+    const classes = navStyle(theme => ({
+      offset: theme.mixins.toolbar,
+    }))
 
     return (
       <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Toolbar>
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <MenuIcon />
@@ -124,14 +126,19 @@ const NavBar = (props) => {
             </Typography>
           </Toolbar>
         </AppBar>
+        <div className={classes.offeset} />
       </div>
     )
   }
 
   return (
     <>
-    {!true && bootStrapNav()}
-    {true && materialNav()}
+    {true && bootStrapNav()}
+    {!true && (
+      <React.Fragment>
+        {materialNav()}
+      </React.Fragment>
+    )}
     </>
   )
 }
