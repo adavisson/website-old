@@ -6,6 +6,12 @@ import resume from '../files/andrew-resume.pdf'
 import { Button } from '@material-ui/core'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
+
+const openResume = () => {
+  window.open(resume, '_blank')
+  return false
+}
+
 class Resume extends Component {
   state = {
     w: window.innerWidth,
@@ -37,10 +43,7 @@ class Resume extends Component {
       <div className="resume">
         <h1>Resume</h1>
         <div className="link">
-          {/* <a target="_blank" href={resume}>
-            Download a copy
-          </a> */}
-          <Button variant="contained" color="primary" href={resume} target="_blank">
+          <Button variant="contained" color="primary" onClick={openResume}>
             Download a Copy
           </Button>
         </div>
