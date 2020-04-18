@@ -1,5 +1,7 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
 const Footer = () => {
   return (
@@ -8,15 +10,19 @@ const Footer = () => {
         <div className="footer">
         <Nav className="justify-content-center" >
           <Nav.Item>
-            <Nav.Link href="https://www.linkedin.com/in/andrew-davisson/">LinkedIn</Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/andrew-davisson/">
+              <LinkedInIcon />
+            </Nav.Link>
           </Nav.Item>
           <span style={{ padding: "5px 5px"}}>|</span>
           <Nav.Item>
-            <Nav.Link href="https://github.com/adavisson">GitHub</Nav.Link>
+            <Nav.Link href="https://github.com/adavisson">
+              <GitHubIcon />
+            </Nav.Link>
           </Nav.Item>
           <span style={{ padding: "5px 5px"}}>|</span>
           <Nav.Item>
-            <Nav.Link href="https://www.builtincolorado.com/member/akdavisson4/176086">Build In Colorado</Nav.Link>
+            <Nav.Link href="https://www.builtincolorado.com/member/akdavisson4/176086">Built In Colorado</Nav.Link>
           </Nav.Item>
         </Nav>
       </div>
