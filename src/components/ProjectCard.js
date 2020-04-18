@@ -16,11 +16,11 @@ const ProjectCard = (props) => {
         </Typography>
       </CardContent>
       <CardActions>
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" href={props.repository}>
           Github
         </Button>
         {props.link && (
-          <Button variant="contained" color="secondary">
+          <Button variant="contained" color="secondary" href={props.link}>
             Demo
           </Button>
         )}
