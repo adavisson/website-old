@@ -185,6 +185,9 @@ const NavBar = (props) => {
             >
               <ListItemText primary="Projects" />
             </ListItem>
+            <ListItem button key="Blog">
+              <ListItemText primary="Blog" />
+            </ListItem>
           </List>
         </Drawer>
       </div>
