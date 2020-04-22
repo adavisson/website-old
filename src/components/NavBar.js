@@ -151,7 +151,7 @@ const NavBar = (props) => {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap onClick={() => props.history.push('/')}>
+            <Typography variant="h6" noWrap>
               Andrew Davisson
             </Typography>
           </Toolbar>
