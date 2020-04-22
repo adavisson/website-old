@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { usePosition } from 'use-position'
 import { withRouter } from 'react-router-dom'
-import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core'
+import clsx from 'clsx'
+import { AppBar, Toolbar, IconButton, Typography, CssBaseline } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import { navStyle } from '../styles/theme'
 
 const NavBar = (props) => {
+  const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState(false)
   const [iconCode, setIconCode] = useState('')
   const [city, setCity] = useState('')
@@ -109,20 +111,37 @@ const NavBar = (props) => {
     )
   }
 
+  const handleDrawerOpen = () => {
+    setOpen(true)
+  }
+
+  const handleDrawerClose = () => {
+    setOpen(false)
+  }
+
   const materialNav = () => {
     const classes = navStyle()
 
     return (
       <div className={classes.root}>
-        <AppBar position="fixed">
+        <AppBar
+          position="fixed"
+          className={clsx(classes.appBar, {
+            [classes.appBarShift]: open,
+          })}
+        >
           <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={clsx(classes.menuButton, open && classes.hide)}
+            >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" className={classes.title} color="inherit">
-              Home
-            </Typography>
           </Toolbar>
+          
         </AppBar>
         <Toolbar />
       </div>
