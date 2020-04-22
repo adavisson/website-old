@@ -168,7 +168,7 @@ const NavBar = (props) => {
         >
           <div className={classes.drawerHeader}>
             <IconButton onClick={handleDrawerClose}>
-              <ChevronLeftIcon />
+              <ChevronLeftIcon color="primary" />
             </IconButton>
           </div>
           <Divider />
