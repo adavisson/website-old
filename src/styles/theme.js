@@ -69,6 +69,8 @@ export const navStyle = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    backgroundColor: '#003866',
+    color: '#ffb347',
   },
   drawerHeader: {
     display: 'flex',
@@ -76,6 +78,8 @@ export const navStyle = makeStyles((theme) => ({
     padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
+    backgroundColor: '#ffb347',
+    color: '#003866',
   },
   content: {
     flexGrow: 1,
