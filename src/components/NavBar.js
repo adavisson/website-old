@@ -3,12 +3,23 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { usePosition } from 'use-position'
 import { withRouter } from 'react-router-dom'
 import clsx from 'clsx'
-import { AppBar, Toolbar, IconButton, Typography, CssBaseline } from '@material-ui/core'
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Typography,
+  Drawer,
+  Divider,
+  List,
+  ListItem,
+  ListItemText,
+} from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import { navStyle } from '../styles/theme'
 
 const NavBar = (props) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
   const [expanded, setExpanded] = useState(false)
   const [iconCode, setIconCode] = useState('')
   const [city, setCity] = useState('')
@@ -141,21 +152,46 @@ const NavBar = (props) => {
               <MenuIcon />
             </IconButton>
           </Toolbar>
-          
         </AppBar>
         <Toolbar />
+        <Drawer
+          className={classes.drawer}
+          variant="persistent"
+          anchor="left"
+          open={open}
+          classes={{
+            paper: classes.drawerPaper,
+          }}
+        >
+          <div className={classes.drawerHeader}>
+            <IconButton onClick={handleDrawerClose}>
+              <ChevronLeftIcon />
+            </IconButton>
+          </div>
+          <Divider />
+          <List>
+            <ListItem button key="Home" onClick={() => {
+              props.history.push('/')
+              setOpen(false)}}
+            >
+              <ListItemText primary="Home" />
+            </ListItem>
+            <ListItem button key="Projects" onClick={() => {
+              props.history.push('/projects')
+              setOpen(false)}}
+            >
+              <ListItemText primary="Projects" />
+            </ListItem>
+          </List>
+        </Drawer>
       </div>
     )
   }
 
   return (
     <>
-    {!true && bootStrapNav()}
-    {true && (
-      <React.Fragment>
-        {materialNav()}
-      </React.Fragment>
-    )}
+      {!true && bootStrapNav()}
+      {true && <React.Fragment>{materialNav()}</React.Fragment>}
     </>
   )
 }
