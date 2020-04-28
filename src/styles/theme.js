@@ -96,5 +96,11 @@ export const navStyle = makeStyles((theme) => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
     martingLeft: 0,
+  },
+  link: {
+    '&:hover': {
+      color: '#ffb347',
+      textDecoration: 'none'
+    },
   }
 }));

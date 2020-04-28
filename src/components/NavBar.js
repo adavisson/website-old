@@ -10,6 +10,7 @@ import {
   Typography,
   Drawer,
   Divider,
+  Link,
   List,
   ListItem,
   ListItemText,
@@ -185,9 +186,11 @@ const NavBar = (props) => {
             >
               <ListItemText primary="Projects" />
             </ListItem>
-            <ListItem button key="Blog">
-              <ListItemText primary="Blog" />
-            </ListItem>
+            <Link className={classes.link} color="secondary" href="https://andydavisson.com">
+              <ListItem button key="Blog">
+                  <ListItemText primary="Blog" />
+              </ListItem>
+            </Link>
           </List>
         </Drawer>
       </div>
