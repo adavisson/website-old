@@ -18,6 +18,8 @@ import {
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { ExpandLess, ExpandMore } from '@material-ui/icons'
 import { navStyle } from '../styles/theme'
 
@@ -159,9 +161,20 @@ const NavBar = (props) => {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap>
-              Andrew Davisson
+          <Link
+            color="secondary"
+            className={classes.link}
+            href={`https://openweathermap.org/city/${cityId}`}
+            target="_blank"
+          >
+            <Typography variant="h6" nowrap>
+            {`${city} ${parseInt(temp)}\xB0F `}
+            <img
+              alt="weather icon"
+              src={`https://openweathermap.org/img/wn/${iconCode}.png`}
+            />
             </Typography>
+          </Link>
           </Toolbar>
         </AppBar>
         <Toolbar />
@@ -207,7 +220,19 @@ const NavBar = (props) => {
               <List component="div" disablePadding>
                 <Link className={classes.link} color="secondary" href="https://www.linkedin.com/in/andrew-davisson/">
                   <ListItem button className={classes.nested} key="LinkedIn">
-                      <ListItemText primary="LinkedIn" />
+                    <LinkedInIcon style={{paddingRight: "5px" }}/>
+                    <ListItemText primary="LinkedIn" />
+                  </ListItem>
+                </Link>
+                <Link className={classes.link} color="secondary" href="https://github.com/adavisson">
+                  <ListItem button className={classes.nested} key="Github">
+                    <GitHubIcon style={{paddingRight: "5px" }}/>
+                    <ListItemText primary="Github" />
+                  </ListItem>
+                </Link>
+                <Link className={classes.link} color="secondary" href="https://www.builtincolorado.com/member/akdavisson4/176086">
+                  <ListItem button className={classes.nested} key="Built In Colorado">
+                    <ListItemText primary="Built In Colorado" />
                   </ListItem>
                 </Link>
               </List>
