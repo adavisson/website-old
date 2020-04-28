@@ -206,6 +206,12 @@ const NavBar = (props) => {
             >
               <ListItemText primary="Projects" />
             </ListItem>
+            <ListItem button key="Resume" onClick={() => {
+              props.history.push('/resume')
+              setOpen(false)}}
+            >
+              <ListItemText primary="Resume" />
+            </ListItem>
             <Link className={classes.link} color="secondary" href="https://adavisson.github.io/">
               <ListItem button key="Blog">
                   <ListItemText primary="Blog" />
