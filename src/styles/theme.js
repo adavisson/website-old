@@ -35,14 +35,78 @@ export const cardStyle = makeStyles({
   },
 })
 
+const drawerWidth = 240
+
 export const navStyle = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    display: 'flex',
+    // flexGrow: 1,
+    // marginBottom: '15px',
+  },
+  appBar: {
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+  },
+  appBarShift: {
+    width: `calc(100% - ${drawerWidth}px)`,
+    marginLeft: drawerWidth,
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    flexGrow: 1,
+  hide: {
+    display: 'none',
   },
+  drawer: {
+    width: drawerWidth,
+    flexShrink: 0,
+  },
+  drawerPaper: {
+    width: drawerWidth,
+    backgroundColor: '#003866',
+    color: '#ffb347',
+  },
+  drawerHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: theme.spacing(0, 1),
+    ...theme.mixins.toolbar,
+    justifyContent: 'flex-end',
+    backgroundColor: '#ffb347',
+    color: '#003866',
+  },
+  content: {
+    flexGrow: 1,
+    padding: theme.spacing(3),
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+    marginLeft: -drawerWidth,
+  },
+  contentShift: {
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+    martingLeft: 0,
+  },
+  link: {
+    '&:hover': {
+      color: '#ffb347',
+      textDecoration: 'none',
+    },
+  },
+  divider: {
+    backgroundColor: '#ffb347',
+  },
+  nested: {
+    paddingLeft: theme.spacing(4),
+  }
 }));

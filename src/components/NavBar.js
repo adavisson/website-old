@@ -2,11 +2,30 @@ import React, { useState, useEffect } from 'react'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { usePosition } from 'use-position'
 import { withRouter } from 'react-router-dom'
-import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core'
+import clsx from 'clsx'
+import {
+  AppBar,
+  Collapse,
+  Toolbar,
+  IconButton,
+  Typography,
+  Drawer,
+  Divider,
+  Link,
+  List,
+  ListItem,
+  ListItemText,
+} from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import { ExpandLess, ExpandMore } from '@material-ui/icons'
 import { navStyle } from '../styles/theme'
 
 const NavBar = (props) => {
+  const [open, setOpen] = useState(false)
+  const [listOpen, setListOpen] = useState(false)
   const [expanded, setExpanded] = useState(false)
   const [iconCode, setIconCode] = useState('')
   const [city, setCity] = useState('')
@@ -109,36 +128,125 @@ const NavBar = (props) => {
     )
   }
 
+  const handleDrawerOpen = () => {
+    setOpen(true)
+  }
+
+  const handleDrawerClose = () => {
+    setOpen(false)
+  }
+
+  const handleSocialClick = () => {
+    setListOpen(!listOpen)
+  }
+
   const materialNav = () => {
-    const classes = navStyle(theme => ({
-      offset: theme.mixins.toolbar,
-    }))
+    const classes = navStyle()
 
     return (
       <div className={classes.root}>
-        <AppBar position="fixed">
+        <AppBar
+          position="fixed"
+          className={clsx(classes.appBar, {
+            [classes.appBarShift]: open,
+          })}
+        >
           <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={clsx(classes.menuButton, open && classes.hide)}
+            >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              Home
+          <Link
+            color="secondary"
+            className={classes.link}
+            href={`https://openweathermap.org/city/${cityId}`}
+            target="_blank"
+          >
+            <Typography variant="h6" nowrap>
+            {`${city} ${parseInt(temp)}\xB0F `}
+            <img
+              alt="weather icon"
+              src={`https://openweathermap.org/img/wn/${iconCode}.png`}
+            />
             </Typography>
+          </Link>
           </Toolbar>
         </AppBar>
-        <div className={classes.offeset} />
+        <Toolbar />
+        <Drawer
+          className={classes.drawer}
+          variant="persistent"
+          anchor="left"
+          open={open}
+          classes={{
+            paper: classes.drawerPaper,
+          }}
+        >
+          <div className={classes.drawerHeader}>
+            <IconButton onClick={handleDrawerClose}>
+              <ChevronLeftIcon color="primary" />
+            </IconButton>
+          </div>
+          <Divider />
+          <List>
+            <ListItem button key="Home" onClick={() => {
+              props.history.push('/')
+              setOpen(false)}}
+            >
+              <ListItemText primary="Home" />
+            </ListItem>
+            <ListItem button key="Projects" onClick={() => {
+              props.history.push('/projects')
+              setOpen(false)}}
+            >
+              <ListItemText primary="Projects" />
+            </ListItem>
+            <Link className={classes.link} color="secondary" href="https://adavisson.github.io/">
+              <ListItem button key="Blog">
+                  <ListItemText primary="Blog" />
+              </ListItem>
+            </Link>
+            <Divider className={classes.divider}/>
+            <ListItem button onClick={handleSocialClick}>
+              <ListItemText primary="Social" />
+              {listOpen ? <ExpandLess /> : <ExpandMore />}
+            </ListItem>
+            <Collapse in={listOpen} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <Link className={classes.link} color="secondary" href="https://www.linkedin.com/in/andrew-davisson/">
+                  <ListItem button className={classes.nested} key="LinkedIn">
+                    <LinkedInIcon style={{paddingRight: "5px" }}/>
+                    <ListItemText primary="LinkedIn" />
+                  </ListItem>
+                </Link>
+                <Link className={classes.link} color="secondary" href="https://github.com/adavisson">
+                  <ListItem button className={classes.nested} key="Github">
+                    <GitHubIcon style={{paddingRight: "5px" }}/>
+                    <ListItemText primary="Github" />
+                  </ListItem>
+                </Link>
+                <Link className={classes.link} color="secondary" href="https://www.builtincolorado.com/member/akdavisson4/176086">
+                  <ListItem button className={classes.nested} key="Built In Colorado">
+                    <ListItemText primary="Built In Colorado" />
+                  </ListItem>
+                </Link>
+              </List>
+            </Collapse>
+          </List>
+        </Drawer>
       </div>
     )
   }
 
   return (
     <>
-    {true && bootStrapNav()}
-    {!true && (
-      <React.Fragment>
-        {materialNav()}
-      </React.Fragment>
-    )}
+      {!true && bootStrapNav()}
+      {true && <React.Fragment>{materialNav()}</React.Fragment>}
     </>
   )
 }
