@@ -16,7 +16,11 @@ import {
   ListItem,
   ListItemText,
 } from '@material-ui/core'
+import HomeIcon from '@material-ui/icons/Home'
+import AppsIcon from '@material-ui/icons/Apps'
 import MenuIcon from '@material-ui/icons/Menu'
+import DescriptionIcon from '@material-ui/icons/Description'
+import BookIcon from '@material-ui/icons/Book'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
@@ -198,23 +202,27 @@ const NavBar = (props) => {
               props.history.push('/')
               setOpen(false)}}
             >
+              <HomeIcon style={{ paddingRight: "5px" }} />
               <ListItemText primary="Home" />
             </ListItem>
             <ListItem button key="Projects" onClick={() => {
               props.history.push('/projects')
               setOpen(false)}}
             >
+              <AppsIcon style={{ paddingRight: "5px" }} />
               <ListItemText primary="Projects" />
             </ListItem>
             <ListItem button key="Resume" onClick={() => {
               props.history.push('/resume')
               setOpen(false)}}
             >
+              <DescriptionIcon style={{ paddingRight: "5px" }} />
               <ListItemText primary="Resume" />
             </ListItem>
             <Link className={classes.link} color="secondary" href="https://adavisson.github.io/">
               <ListItem button key="Blog">
-                  <ListItemText primary="Blog" />
+                <BookIcon style={{ paddingRight: "5px" }} />
+                <ListItemText primary="Blog" />
               </ListItem>
             </Link>
             <Divider className={classes.divider}/>
