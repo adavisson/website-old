@@ -21,6 +21,7 @@ import { navStyle } from '../styles/theme'
 
 const NavBar = (props) => {
   const [open, setOpen] = useState(false)
+  const [listOpen, setListOpen] = useState(false)
   const [expanded, setExpanded] = useState(false)
   const [iconCode, setIconCode] = useState('')
   const [city, setCity] = useState('')
@@ -131,6 +132,10 @@ const NavBar = (props) => {
     setOpen(false)
   }
 
+  const handleSocialClick = () => {
+    setListOpen(!listOpen)
+  }
+
   const materialNav = () => {
     const classes = navStyle()
 
@@ -186,11 +191,15 @@ const NavBar = (props) => {
             >
               <ListItemText primary="Projects" />
             </ListItem>
-            <Link className={classes.link} color="secondary" href="https://andydavisson.com">
+            <Link className={classes.link} color="secondary" href="https://adavisson.github.io/">
               <ListItem button key="Blog">
                   <ListItemText primary="Blog" />
               </ListItem>
             </Link>
+            <Divider className={classes.divider}/>
+            <ListItem button onClick={handleSocialClick}>
+              <ListItemText primary="Social" />
+            </ListItem>
           </List>
         </Drawer>
       </div>

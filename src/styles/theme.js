@@ -102,5 +102,8 @@ export const navStyle = makeStyles((theme) => ({
       color: '#ffb347',
       textDecoration: 'none'
     },
+  },
+  divider: {
+    backgroundColor: '#ffb347',
   }
 }));
