@@ -100,10 +100,13 @@ export const navStyle = makeStyles((theme) => ({
   link: {
     '&:hover': {
       color: '#ffb347',
-      textDecoration: 'none'
+      textDecoration: 'none',
     },
   },
   divider: {
     backgroundColor: '#ffb347',
+  },
+  nested: {
+    paddingLeft: theme.spacing(4),
   }
 }));

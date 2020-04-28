@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom'
 import clsx from 'clsx'
 import {
   AppBar,
+  Collapse,
   Toolbar,
   IconButton,
   Typography,
@@ -17,6 +18,7 @@ import {
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
+import { ExpandLess, ExpandMore } from '@material-ui/icons'
 import { navStyle } from '../styles/theme'
 
 const NavBar = (props) => {
@@ -199,7 +201,17 @@ const NavBar = (props) => {
             <Divider className={classes.divider}/>
             <ListItem button onClick={handleSocialClick}>
               <ListItemText primary="Social" />
+              {listOpen ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
+            <Collapse in={listOpen} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <Link className={classes.link} color="secondary" href="https://www.linkedin.com/in/andrew-davisson/">
+                  <ListItem button className={classes.nested} key="LinkedIn">
+                      <ListItemText primary="LinkedIn" />
+                  </ListItem>
+                </Link>
+              </List>
+            </Collapse>
           </List>
         </Drawer>
       </div>
