@@ -1,6 +1,5 @@
 import React from 'react'
-import { Nav } from 'react-bootstrap'
-import { AppBar, Divider, Link, Toolbar, Typography } from '@material-ui/core'
+import { Divider, Link, Typography } from '@material-ui/core'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import LocationCityIcon from '@material-ui/icons/LocationCity'
