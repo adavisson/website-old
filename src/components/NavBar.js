@@ -112,6 +112,9 @@ const NavBar = (props) => {
           }}
         >
           <div className={classes.drawerHeader}>
+            <Typography variant="h6">
+              Andrew Davisson
+            </Typography>
             <IconButton onClick={handleDrawerClose}>
               <ChevronLeftIcon color="primary" />
             </IconButton>
