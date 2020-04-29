@@ -16,6 +16,7 @@ const Footer = () => {
           className={classes.link}
           color="secondary"
           href="https://github.com/adavisson"
+          target="_blank"
         >
           <GitHubIcon className={classes.icon} />
           <Typography className={classes.text}>Github</Typography>
@@ -25,6 +26,7 @@ const Footer = () => {
           className={classes.link}
           color="secondary"
           href="https://www.linkedin.com/in/andrew-davisson"
+          target="_blank"
         >
           <LinkedInIcon className={classes.icon} />
           <Typography className={classes.text}>LinkedIn</Typography>
@@ -34,6 +36,7 @@ const Footer = () => {
           className={classes.link}
           color="secondary"
           href="https://www.builtincolorado.com/member/akdavisson4/176086"
+          target="_blank"
         >
           <LocationCityIcon className={classes.icon} />
           <Typography className={classes.text}>Built In Colorado</Typography>

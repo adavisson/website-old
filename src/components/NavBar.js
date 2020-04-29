@@ -175,6 +175,7 @@ const NavBar = (props) => {
                   className={classes.link}
                   color="secondary"
                   href="https://www.linkedin.com/in/andrew-davisson/"
+                  target="_blank"
                 >
                   <ListItem button className={classes.nested} key="LinkedIn">
                     <LinkedInIcon style={{ paddingRight: '5px' }} />
@@ -185,6 +186,7 @@ const NavBar = (props) => {
                   className={classes.link}
                   color="secondary"
                   href="https://github.com/adavisson"
+                  target="_blank"
                 >
                   <ListItem button className={classes.nested} key="Github">
                     <GitHubIcon style={{ paddingRight: '5px' }} />
@@ -195,6 +197,7 @@ const NavBar = (props) => {
                   className={classes.link}
                   color="secondary"
                   href="https://www.builtincolorado.com/member/akdavisson4/176086"
+                  target="_blank"
                 >
                   <ListItem
                     button

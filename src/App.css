@@ -15,10 +15,6 @@ code {
     monospace;
 }
 
-h1 {
-  font-weight: bold;
-}
-
 .App {
   text-align: center;
 }
@@ -36,28 +32,6 @@ h1 {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
-
-.card {
-  border: 4px solid #003866;
-  background-color: #003866;
-  margin: 15px;
-  width: 18rem;
-}
-
-.card-header {
-  background-color: #003866;
-  color: #ffb347;
-  font-size: x-large;
-  font-weight: 600;
-}
-
-.card-body {
-  background-color: #ffb347;
 }
 
 .card-container {
@@ -79,7 +53,7 @@ h1 {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 3rem;
+  height: 2.5rem;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
@@ -87,70 +61,8 @@ h1 {
 
 .phantom {
   display: block;
-  padding: 5px;
-  height: 3rem;
+  height: 2.5rem;
   width: 100%;
-}
-
-.nav-link {
-  color: #ffb347;
-}
-
-.navbar {
-  background-color: #003866;
-  margin-bottom: 15px;
-}
-
-#basic-navbar-nav .nav-link {
-  color: #ffb347;
-}
-
-#basic-navbar-nav .nav-link:hover {
-  /* background-color: #ffb347;
-  color: #003866; */
-  font-weight: 600;
-}
-
-.nav-link:hover {
-  color: #ffb347;
-  font-weight: bold;
-}
-
-.btn-primary {
-  background-color: #003866;
-  color: #ffb347;
-  border-color: #003866;
-}
-
-.btn-primary:hover {
-  background-color: #ffb347;
-  color: #003866;
-  border-color: #003866;
-}
-
-.btn-secondary {
-  background-color: #ffb347;
-  color: #003866;
-  border-color: #003866;
-}
-
-.btn-secondary:hover {
-  background-color: #003866;
-  color: #ffb347;
-  border-color: #003866;
-}
-
-.dropdown-menu {
-  background-color: #ffb347;
-}
-
-.dropdown-item {
-  color: #003866;
-}
-
-.dropdown-item:hover {
-  background-color: #003866;
-  color: #ffb347;
 }
 
 .resume {
@@ -171,13 +83,6 @@ h1 {
   padding: 10px;
   margin: auto;
   flex: 0 1 auto;
-}
-
-.gif {
-  max-width: 85%;
-  flex-basis: auto;
-  margin: auto;
-  flex-shrink: 1;
 }
 
 .resume {
@@ -231,45 +136,6 @@ h1 {
   flex-shrink: 1;
 }
 
-.navbar .navbar-brand {
-  color: #ffb347;
-}
-
-.navbar .navbar-brand:hover {
-  color: #ffb347;
-  font-weight: bold;
-}
-
-.navbar img {
-  background-color: #ffb347;
-  border-radius: 2em;
-  max-width: 35px;
-}
-
-.navbar .weather .nav-link {
-  color: #ffb347;
-  font-weight: 400;
-}
-
-.navbar .weather .nav-link:visited {
-  color: #ffb347;
-  font-weight: 400;
-}
-
-.navbar .weather .nav-link:hover {
-  color: #ffb347;
-  font-weight: 600;
-}
-
-.navbar .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 179, 71, .9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.navbar .navbar-toggler {
-  /* border-color: rgba(255, 179, 71.9); */
-  border: none;
-}
-
 @media only screen and (min-width: 500px) {
   .profile-pic {
     max-width: 450px;
@@ -278,11 +144,5 @@ h1 {
 
   .home p {
     max-width: 700px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .navbar :nth-child(2) {
-    order: 2;
   }
 }

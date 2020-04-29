@@ -1,5 +1,4 @@
 import { createMuiTheme, makeStyles } from '@material-ui/core/styles'
-import { Autorenew } from '@material-ui/icons'
 
 export const theme = createMuiTheme({
   palette: {
@@ -37,11 +36,6 @@ export const cardStyle = makeStyles({
 })
 
 export const bottomBarStyle = makeStyles((theme) => ({
-  appBar: {
-    height: 40,
-    top: 'auto',
-    bottom: 0,
-  },
   link: {
     '&:hover': {
       color: '#ffb347',
@@ -52,12 +46,10 @@ export const bottomBarStyle = makeStyles((theme) => ({
     backgroundColor: '#ffb347',
   },
   icon: {
-    fontSize: 20,
+    fontSize: 18,
   },
   text: {
     fontSize: 'x-small',
-    marginLeft: '15px',
-    marginRight: '15px',
   },
   toolbar: {
     height: 40,
