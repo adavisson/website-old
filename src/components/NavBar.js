@@ -23,6 +23,7 @@ import BookIcon from '@material-ui/icons/Book'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import LocationCityIcon from '@material-ui/icons/LocationCity'
 import { ExpandLess, ExpandMore } from '@material-ui/icons'
 import { navStyle } from '../styles/theme'
 
@@ -204,6 +205,7 @@ const NavBar = (props) => {
                     className={classes.nested}
                     key="Built In Colorado"
                   >
+                    <LocationCityIcon style={{ paddingRight: '5px' }} />
                     <ListItemText primary="Built In Colorado" />
                   </ListItem>
                 </Link>
