@@ -87,17 +87,17 @@ const NavBar = (props) => {
             </IconButton>
             <Link
               color="secondary"
-              className={classes.link}
+              className={classes.weather}
               href={`https://openweathermap.org/city/${cityId}`}
               target="_blank"
             >
-              <Typography variant="h6" nowrap>
+              <Typography style={{ alignSelf: 'center' }} variant="h6" nowrap>
                 {`${city} ${parseInt(temp)}\xB0F `}
-                <img
-                  alt="weather icon"
-                  src={`https://openweathermap.org/img/wn/${iconCode}.png`}
-                />
               </Typography>
+              <img
+                alt="weather icon"
+                src={`https://openweathermap.org/img/wn/${iconCode}.png`}
+              />
             </Link>
           </Toolbar>
         </AppBar>
