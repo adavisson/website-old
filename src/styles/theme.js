@@ -35,6 +35,30 @@ export const cardStyle = makeStyles({
   },
 })
 
+export const bottomBarStyle = makeStyles((theme) => ({
+  link: {
+    '&:hover': {
+      color: '#ffb347',
+      textDecoration: 'none',
+    },
+  },
+  divider: {
+    backgroundColor: '#ffb347',
+  },
+  icon: {
+    fontSize: 18,
+  },
+  text: {
+    fontSize: 'x-small',
+  },
+  toolbar: {
+    height: 40,
+    justifyContent: 'center',
+    alignContent: 'center',
+  }
+}))
+
+
 const drawerWidth = 240
 
 export const navStyle = makeStyles((theme) => ({
@@ -108,5 +132,15 @@ export const navStyle = makeStyles((theme) => ({
   },
   nested: {
     paddingLeft: theme.spacing(4),
+  },
+  weather: {
+    display: 'flex',
+    flexDirection: 'row',
+    margin: 'auto',
+    alignContent: 'center',    
+    '&:hover': {
+      color: '#ffb347',
+      textDecoration: 'none',
+    },
   }
 }));
