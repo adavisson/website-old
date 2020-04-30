@@ -61,6 +61,7 @@ code {
 
 .phantom {
   display: block;
+  margin-top: 30px;
   height: 2.5rem;
   width: 100%;
 }
