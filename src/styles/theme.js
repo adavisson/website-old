@@ -50,6 +50,8 @@ export const bottomBarStyle = makeStyles((theme) => ({
   },
   text: {
     fontSize: 'x-small',
+    paddingLeft: 15,
+    paddingRight: 15,
   },
   toolbar: {
     height: 40,
