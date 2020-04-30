@@ -144,5 +144,13 @@ export const navStyle = makeStyles((theme) => ({
       color: '#ffb347',
       textDecoration: 'none',
     },
+  },
+  button: {
+    backgroundColor: '#ffb347',
+    color: '#003866',
+    '&:hover': {
+      backgroundColor: '#ffb347',
+      color: '#003866',
+    },
   }
 }));

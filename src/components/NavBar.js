@@ -166,7 +166,8 @@ const NavBar = (props) => {
               </ListItem>
             </Link>
             <Divider className={classes.divider} />
-            <ListItem button onClick={handleSocialClick}>
+            {/* <div className={classes.button}> */}
+            <ListItem className={classes.button} button onClick={handleSocialClick}>
               <ListItemText primary="Social" />
               {listOpen ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
