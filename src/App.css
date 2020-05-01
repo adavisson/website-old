@@ -86,6 +86,10 @@ code {
   flex: 0 1 auto;
 }
 
+.home-links {
+  text-decoration: none;
+}
+
 .resume {
   display: flex;
   flex-direction: column;
