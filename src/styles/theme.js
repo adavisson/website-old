@@ -4,10 +4,10 @@ export const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#002f6c',
-      contrastText: '#fdd835',
+      contrastText: '#fbc02d',
     },
     secondary: {
-      main: '#fdd835',
+      main: '#fbc02d',
       contrastText: '#002f6c',
     },
   },
@@ -28,7 +28,7 @@ export const cardStyle = makeStyles({
   },
   body: {
     padding: '15px',
-    backgroundColor: '#fdd835'
+    backgroundColor: '#fbc02d'
   },
   pos: {
     marginBottom: 12,
@@ -38,12 +38,12 @@ export const cardStyle = makeStyles({
 export const bottomBarStyle = makeStyles((theme) => ({
   link: {
     '&:hover': {
-      color: '#fdd835',
+      color: '#fbc02d',
       textDecoration: 'none',
     },
   },
   divider: {
-    backgroundColor: '#fdd835',
+    backgroundColor: '#fbc02d',
   },
   icon: {
     fontSize: 18,
@@ -96,7 +96,7 @@ export const navStyle = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     backgroundColor: '#002f6c',
-    color: '#fdd835',
+    color: '#fbc02d',
   },
   drawerHeader: {
     display: 'flex',
@@ -104,7 +104,7 @@ export const navStyle = makeStyles((theme) => ({
     padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
-    backgroundColor: '#fdd835',
+    backgroundColor: '#fbc02d',
     color: '#002f6c',
   },
   content: {
@@ -125,12 +125,12 @@ export const navStyle = makeStyles((theme) => ({
   },
   link: {
     '&:hover': {
-      color: '#fdd835',
+      color: '#fbc02d',
       textDecoration: 'none',
     },
   },
   divider: {
-    backgroundColor: '#fdd835',
+    backgroundColor: '#fbc02d',
   },
   nested: {
     paddingLeft: theme.spacing(4),
@@ -141,15 +141,15 @@ export const navStyle = makeStyles((theme) => ({
     margin: 'auto',
     alignContent: 'center',    
     '&:hover': {
-      color: '#fdd835',
+      color: '#fbc02d',
       textDecoration: 'none',
     },
   },
   button: {
-    backgroundColor: '#fdd835',
+    backgroundColor: '#fbc02d',
     color: '#002f6c',
     '&:hover': {
-      backgroundColor: '#fdd835',
+      backgroundColor: '#fbc02d',
       color: '#002f6c',
     },
   }

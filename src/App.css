@@ -6,7 +6,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fdd835;
+  background-color: #fbc02d;
   color: #002f6c;
 }
 
@@ -47,7 +47,7 @@ code {
   display: flex;
   flex-direction: row;
   background-color: #002f6c;
-  color: #b4ffff;
+  color: #fbc02d;
   text-align: center;
   padding: 5px;
   position: fixed;
