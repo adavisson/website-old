@@ -6,8 +6,8 @@ body {
   font-family: 'Titillium Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffb347;
-  color: #003866;
+  background-color: #d5f3f3;
+  color: #34515e;
 }
 
 code {
@@ -46,8 +46,8 @@ code {
 .footer {
   display: flex;
   flex-direction: row;
-  background-color: #003866;
-  color: #ffb347;
+  background-color: #34515e;
+  color: #b4ffff;
   text-align: center;
   padding: 5px;
   position: fixed;
@@ -107,7 +107,7 @@ code {
 }
 
 .resume a {
-  color: #003866;
+  color: #34515e;
 }
 .resume .link {
   margin-bottom: 15px;
@@ -129,7 +129,7 @@ code {
 }
 
 .about p a {
-  color: #003866;
+  color: #34515e;
   font-weight: 700;
 }
 
