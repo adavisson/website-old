@@ -3,12 +3,12 @@ import { createMuiTheme, makeStyles } from '@material-ui/core/styles'
 export const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#34515e',
-      contrastText: '#d5f3f3',
+      main: '#002f6c',
+      contrastText: '#fdd835',
     },
     secondary: {
-      main: '#d5f3f3',
-      contrastText: '#34515e',
+      main: '#fdd835',
+      contrastText: '#002f6c',
     },
   },
   typography: {
@@ -20,7 +20,7 @@ export const cardStyle = makeStyles({
   root: {
     width: '20rem',
     margin: '15px',
-    backgroundColor: '#34515e',
+    backgroundColor: '#002f6c',
   },
   title: {
     fontSize: 'x-large',
@@ -28,7 +28,7 @@ export const cardStyle = makeStyles({
   },
   body: {
     padding: '15px',
-    backgroundColor: '#d5f3f3'
+    backgroundColor: '#fdd835'
   },
   pos: {
     marginBottom: 12,
@@ -38,12 +38,12 @@ export const cardStyle = makeStyles({
 export const bottomBarStyle = makeStyles((theme) => ({
   link: {
     '&:hover': {
-      color: '#d5f3f3',
+      color: '#fdd835',
       textDecoration: 'none',
     },
   },
   divider: {
-    backgroundColor: '#d5f3f3',
+    backgroundColor: '#fdd835',
   },
   icon: {
     fontSize: 18,
@@ -95,8 +95,8 @@ export const navStyle = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: '#34515e',
-    color: '#d5f3f3',
+    backgroundColor: '#002f6c',
+    color: '#fdd835',
   },
   drawerHeader: {
     display: 'flex',
@@ -104,8 +104,8 @@ export const navStyle = makeStyles((theme) => ({
     padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
-    backgroundColor: '#d5f3f3',
-    color: '#34515e',
+    backgroundColor: '#fdd835',
+    color: '#002f6c',
   },
   content: {
     flexGrow: 1,
@@ -125,12 +125,12 @@ export const navStyle = makeStyles((theme) => ({
   },
   link: {
     '&:hover': {
-      color: '#d5f3f3',
+      color: '#fdd835',
       textDecoration: 'none',
     },
   },
   divider: {
-    backgroundColor: '#d5f3f3',
+    backgroundColor: '#fdd835',
   },
   nested: {
     paddingLeft: theme.spacing(4),
@@ -141,16 +141,16 @@ export const navStyle = makeStyles((theme) => ({
     margin: 'auto',
     alignContent: 'center',    
     '&:hover': {
-      color: '#d5f3f3',
+      color: '#fdd835',
       textDecoration: 'none',
     },
   },
   button: {
-    backgroundColor: '#d5f3f3',
-    color: '#34515e',
+    backgroundColor: '#fdd835',
+    color: '#002f6c',
     '&:hover': {
-      backgroundColor: '#d5f3f3',
-      color: '#34515e',
+      backgroundColor: '#fdd835',
+      color: '#002f6c',
     },
   }
 }));
