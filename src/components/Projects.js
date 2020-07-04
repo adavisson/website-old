@@ -27,6 +27,11 @@ const Projects = () => {
       link: "https://crazy-tales.andydavisson.com/"
     },
     {
+      title: "MadLibz RN",
+      description: "This is a native mobile application developed with React Native. It is essentially my Crazy Tales application, but developed to be a native mobile app.",
+      repository: "https://github.com/adavisson/madlibz-rn"
+    },
+    {
       title: "Meme Generator",
       description: "This application has several popular images used in memes and allows you to add a phrase. It also allows you to choose the placement and color of the phrase.",
       repository: "https://github.com/adavisson/meme-generator"
