@@ -10,6 +10,12 @@ const Projects = () => {
       repository: "https://github.com/adavisson/job-board-client"
     },
     {
+      title: "Gmail Electron",
+      description: "An electron application that runs the gmail web interface as a desktop application and loads chrome extension that gives the page a more minimal appearance",
+      repository: "https://github.com/adavisson/gmail-electron",
+      blog: "https://adavisson.github.io/getting_started_with_electron"
+    },
+    {
       title: "CFB Machine",
       description: "This application allows allows you to look up historical College Football matches and stats.",
       repository: "https://github.com/adavisson/cfb-machine",
@@ -65,6 +71,7 @@ const Projects = () => {
               description={proj.description}
               repository={proj.repository}
               link={proj.link}
+              blog={proj.blog}
             />
           )
         })}
