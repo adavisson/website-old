@@ -24,7 +24,8 @@ const Projects = () => {
     {
       title: "Ansible Home",
       description: "A small Ansible project for managing my home media server and my AWS hosted webserver.",
-      repository: "https://github.com/adavisson/ansible-home"
+      repository: "https://github.com/adavisson/ansible-home",
+      blog: "https://adavisson.github.io/automating_with_ansible"
     },
     {
       title: "Crazy Tales",
