@@ -25,7 +25,7 @@ const ProjectCard = (props) => {
           </Button>
         )}
         {props.blog && (
-          <Button variant="contained" color="secondary" href={props.blog}>
+          <Button variant="contained" color="secondary" href={props.blog} target="_blank">
             Blog Post
           </Button>
         )}
