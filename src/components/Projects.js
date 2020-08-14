@@ -19,6 +19,7 @@ const Projects = () => {
       title: "CFB Machine",
       description: "This application is built with Vue and Vuetify. It allows you to look up historical College Football matches and stats.",
       repository: "https://github.com/adavisson/cfb-machine-vuetify",
+      blog: "https://adavisson.github.io/making_a_vuetiful_app",
       link: "https://cfb-machine.andydavisson.com/"
     },
     {
