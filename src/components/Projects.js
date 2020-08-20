@@ -7,7 +7,8 @@ const Projects = () => {
     {
       title: "Job Board",
       description: "This application allows a user to view companies and job postings, and save contact information and notes. This project also implements GraphQL.",
-      repository: "https://github.com/adavisson/job-board-client"
+      repository: "https://github.com/adavisson/job-board-client",
+      blog: "https://adavisson.github.io/graphql_a_better_api"
     },
     {
       title: "Gmail Electron",
